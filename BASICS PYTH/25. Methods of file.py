@@ -31,4 +31,5 @@ with open('BASICS PYTH/myfile.txt','r') as f :
 
 '''truncate() is a file method that changes the size of a file. It can either:
 Remove data (shorten the file), or
-Extend the file (make it larger, filling the extra space with null bytes \x00 on most systems).'''
+Extend the file (make it larger, filling the extra space with null bytes \x00 on most systems).
+It deletes all the content after currnt pointer. So if the current pointer is at 0 it deletes all the content of a file.'''
