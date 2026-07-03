@@ -17,3 +17,18 @@ with open('myfile2.txt','w') as f2 :
     lines = ['line 1\n', 'line 2\n', 'line 3\n']
     f2.writelines(lines)    # The writelines method in python writes a swquence of strings to a file. The sequence can be of any iterable object, like list and tuple.
 # Note that writelines doesn't add new lines on its own, we manually have to add \n for it.
+    
+
+with open('BASICS PYTH/myfile.txt','r') as f :
+    print(type(f))
+
+    f.seek(10)        # moves to 10th byte in the file. It allows us to move the current position within the file to a specific point. We  ca neither move forward or backward from the current position.
+    data = f.read(5)  # this reads first 5 charaters in the file from the current position 
+    print(data)
+# THIS program moves current position to 10 and then read(5) reads first 5 charaters including space.
+
+    print(f.tell())  # tells the current position of the file
+
+'''truncate() is a file method that changes the size of a file. It can either:
+Remove data (shorten the file), or
+Extend the file (make it larger, filling the extra space with null bytes \x00 on most systems).'''

@@ -1,1 +1,2 @@
-Hello this is a python begineers course.
+Hello
+This is a python begineers course.
