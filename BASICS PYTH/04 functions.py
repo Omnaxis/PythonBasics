@@ -50,3 +50,13 @@ result = map(lambda x : x**3,l)                       # This will cube all the n
 print(list(result))
 # Map works on every item of the list and return an iterator with the modified items as per the function provided in map. It is used to apply a function to all items in an iterable (like list, tuple etc.)
 # Filter is used to filter out items from an iterable based on a function that returns True or False. It returns an iterator with the items for which the function returns True.
+
+# --------- reduce------------
+# syntax : reduce(function, iterable)
+# It is a part of the functools module
+# It applies a function to a sequence and returns a single value.
+# It apply the function to first two elements in the iterables and then applies the function to the result and the next element and so on.
+
+from functools import reduce 
+newl= int(reduce(lambda x,y : x+y, l))
+print(newl)
