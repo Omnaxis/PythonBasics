@@ -14,7 +14,7 @@ print(a is b)
 a,b = [1,2,3],[1,2,3]
 print(a==b)
 print(a is b)
-# This will print true for a==b as both are equal but false for a is b because , list is immutable so python sees a,b as different object
+# This will print true for a==b as both are equal but false for a is b because , list is mutable so python sees a,b as different object
 
 a,b = (1,2,3),(1,2,3)
 print(a==b)
