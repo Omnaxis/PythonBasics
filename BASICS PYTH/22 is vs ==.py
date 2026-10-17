@@ -31,3 +31,5 @@ x, y, z = 1, 3, 4
 x = 1
 y = 3
 z = 4
+
+# reduce map and filter is in 04 function.py 
