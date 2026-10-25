@@ -1,6 +1,6 @@
 # A constructor is a special method in a class used to create and initialize an object of the class .
 # Constructor gets called automatically when an object is created of a class. It initialize or assign values to the data members of that class .
-# it always return none.
+# It always return none. That means __init__ must always return none.
 
 class Person:
     def __init__(self, name, occ):    # __init__ is a parameter constructor that initialize an object of the class 
